@@ -1,0 +1,54 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Login - Student Tracking System
+  link(rel='icon' sizes='16x16 32x32 48x48 64x64' href='favicon_io/favicon.ico')
+  link(rel='stylesheet' href='css/login.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+header
+  nav
+    ul
+      .button_box_1
+        a(href='/') HOME
+      .button_box_1
+        a(href='content') CONTENT
+      .button_box_1
+        a(href='contact_us') CONTACT US
+      .button_box_1
+        a(href='about_us') ABOUT US
+      .button_box_1
+        a(href='search') SEARCH
+    .logo
+      .headerText_1
+        img(src='images/logo-home.png' alt='')
+      .headerText_2
+        span  STUDENT TRACKING SYSTEM
+    ul
+      .button_box_2
+        a(href='signup') SIGN UP
+      .button_box_3
+        a(href='login') LOGIN
+    .dropdown
+      img.dropbtn(src='images/avatar.png' alt='Avatar' onclick='myFunction()')
+      #myDropdown.dropdown-content
+        a(href='data_fillup') Data Fillup
+        a(href='logout') Logout 
+main
+  .container_body 
+    form.box(action='/login' method='POST')
+      h3=error
+      h1 Login
+      input(type='text' name='username' placeholder='username' required)
+      input(type='password' name='password' placeholder='password' required)
+      input(type='submit' value='LOGIN')
+      p Doesn't Have Account ?  
+        a(href='signup') Signup
+footer
+  div
+    // google adss
+    | Copyright &copy; 
+    b OFFICIAL MHRD
+script(src='script.js')

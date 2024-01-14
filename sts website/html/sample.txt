@@ -1,0 +1,28 @@
+student id(system)
+name
+father name
+mother name
+gender
+dob
+email
+phonenumber
+
+state
+city
+pincode
+address
+
+
+institute id
+branch
+current year
+last exam name
+result
+
+current traning
+current internship
+current fellowship
+current grants
+parent annual income
+
+

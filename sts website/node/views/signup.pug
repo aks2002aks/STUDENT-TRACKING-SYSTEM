@@ -1,0 +1,70 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Signup - Student Tracking System
+  link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='favicon_io/favicon.ico')
+  link(rel='stylesheet' href='css/signup.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+header
+  nav
+    ul
+      .button_box_1
+        a(href='/') HOME
+      .button_box_1
+        a(href='content') CONTENT
+      .button_box_1
+        a(href='contact_us') CONTACT US
+      .button_box_1
+        a(href='about_us') ABOUT US
+      .button_box_1
+        a(href='search') SEARCH
+    .logo
+      .headerText_1
+        img(src='images/logo-home.png' alt='')
+      .headerText_2
+        span  STUDENT TRACKING SYSTEM
+    ul
+      .button_box_2
+        a(href='signup') SIGN UP
+      .button_box_3
+        a(href='login') LOGIN
+    .dropdown
+      img.dropbtn(src='images/avatar.png' alt='Avatar' onclick='myFunction()')
+      #myDropdown.dropdown-content
+        a(href='data_fillup') Data Fillup
+        a(href='logout') Logout
+main
+  .container_body
+    form.box(action='/user_signup' method='POST')
+      h3=message 
+      h1 SIGN UP PORTAL
+      input(type='text' name='firstname' placeholder='first name')
+      input(type='text' name='lastname' placeholder='last name')
+      input(type='text' name='username' placeholder='username')
+      input(type='text' name='uname' placeholder='university or college name')
+      input(type='text' name='uid' placeholder='university or college name ID')
+      input#email_or_phone(type='email' name='email' placeholder='email address')
+      br
+      input(type='password' name='password' placeholder='New password')
+      input(type='password' name='cpassword' placeholder='confirm password')
+      p Date of Establishment
+      input#birthday(type='date' name='doe')
+      br
+      select#ctype(name='ctype' required='')
+          option(value='') UNIVERSITY TYPE
+          option(value='male') Private
+          option(value='female') Goverment
+          option(value='other') Other
+      br
+      input(type='submit'  value='SIGN UP')
+      p Already have account ?  
+        a(href='login') Login
+footer
+  div
+    // google ads
+    | Copyright &copy; 
+    b OFFICIAL MHRD
+script(src='script.js')

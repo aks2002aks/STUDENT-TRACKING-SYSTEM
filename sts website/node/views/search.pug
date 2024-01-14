@@ -1,0 +1,122 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title What We Do - Student Tracking System
+  meta(name='description' contet='.....')
+  link(rel='icon' href='images/logo-home.png' type='image/ico')
+  link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+  link(rel='stylesheet' href='css/search.css')
+header
+  nav
+    ul
+      .button_box_1
+        a(href='/') HOME
+      .button_box_1
+        a(href='content') CONTENT
+      .button_box_1
+        a(href='contact_us') CONTACT US
+      .button_box_1
+        a(href='about_us') ABOUT US
+      .button_box_1
+        a(href='search') SEARCH
+    .logo
+      .headerText_1
+        img(src='images/logo-home.png' alt='')
+      .headerText_2
+        span  STUDENT TRACKING SYSTEM
+    ul
+      .button_box_2
+        a(href='signup') SIGN UP
+      .button_box_3
+        a(href='login') LOGIN
+    .dropdown
+      img.dropbtn(src='images/avatar.png' alt='Avatar' onclick='myFunction()')
+      #myDropdown.dropdown-content
+        a(href='data_fillup') Data Fillup
+        a(href='logout') Logout
+main
+  section.page1
+    .container_body
+      .bar
+        h6
+          a(href='search') SEARCH BY STUDENT ID
+      #error
+      h3=error
+      br
+      form(action='/request' method='post')
+        input.search-bar(type='text' name='id' placeholder='ENTER STUDENT ID' )
+        button#btn-search(type="submit") SEARCH
+      br
+      br
+      table#table1
+        thead
+          th STUDENT ID
+          th NAME
+          th FATHER NAME
+          th MOTHER NAME
+          th GENDER
+          th DOB
+          th EMAIL
+          th PHONE NUMBER
+        tbody
+          tr
+            td=data1
+            td=data2
+            td=data3
+            td=data4
+            td=data5
+            td=data6
+            td=data7
+            td=data8
+      table#table2
+        thead
+          th STATE
+          th CITY
+          th PINCODE
+          th ADDRESS
+        tbody
+          tr
+            td=data9
+            td=data10 
+            td=data11 
+            td=data12 
+      table#table3
+        thead
+          th INSTITUTE ID
+          th BRANCH
+          th CURRENT YEAR
+          th LAST EXAM NAME
+          th RESULT
+        tbody
+          tr
+            td=data13
+            td=data14 
+            td=data15 
+            td=data16 
+            td=data17  
+      table#table4
+        thead
+          th CURRENT TRAINING
+          th CURRENT INTERNSHIP
+          th CURRENT FELLOWSHIP
+          th CURRENT GRANTS
+          th ANNUAL INCOME(PARENTS)
+        tbody
+          tr
+            td=data18
+            td=data19
+            td=data20 
+            td=data21 
+            td=data22  
+footer
+  div
+    // google ads
+    | Copyright &copy; 
+    b OFFICIAL MHRD
+// *************************************
+script(src='script.js')
+

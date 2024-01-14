@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What We Do - Student Tracking System</title>
+    <meta name="description" contet=".....">
+    <link rel="icon" href="images/logo-home.png" type="image/ico" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="button_box_1"><a href="/">HOME</a></div>
+                <div class="button_box_1"><a href="content">CONTENT</a></div>
+                <div class="button_box_1"><a href="contact_us">CONTACT US</a></div>
+                <div class="button_box_1"><a href="about_us">ABOUT US</a></div>
+                <div class="button_box_1"><a href="search">SEARCH</a></div>
+            </ul>
+            <div class="logo">
+                <div class="headerText_1"><img src="images/logo-home.png" alt=""></div>
+                <div class="headerText_2"><span> STUDENT TRACKING SYSTEM</span></div>
+            </div>
+
+            <ul>
+                <div class="button_box_2"><a href="signup">SIGN UP</a></div>
+                <div class="button_box_3"><a href="login">LOGIN</a></div>
+            </ul>
+            <div class="dropdown">
+                <img src="images/avatar.png" alt="Avatar" onclick="myFunction()" class="dropbtn">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="data_fillup">Data Fillup</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="page1">
+            <div class="container_body">
+
+                <div class="bar">
+                    <h6><a href="search">SEARCH BY STUDENT ID</a></h6>
+                    <h6><a href="search2">SEARCH BY STATE</a></h6>
+                    <h6><a href="search3">SEARCH BY COLLEGE</a></h6>
+                </div>
+                <div id="error">
+
+                </div>
+                <form action="/request" method="get">
+                    <input class="search-bar" type="text" placeholder="ENTER STUDENT ID" required>
+                    <button id="btn-search" onClick="loadhtmltable([])">SEARCH</button>
+                </form>
+                <BR></BR>
+                <table id="table1">
+                    <thead>
+                        <th>STUDENT ID</th>
+                        <th>NAME</th>
+                        <th>FATHER NAME</th>
+                        <th>MOTHER NAME</th>
+                        <th>GENDER</th>
+                        <th>DOB</th>
+                        <th>EMAIL</th>
+                        <th>PHONE NUMBER</th>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <table id="table2">
+                    <thead>
+                        <th>STATE</th>
+                        <th>CITY</th>
+                        <th>PINCODE</th>
+                        <th>ADDRESS</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <table id="table3">
+                    <thead>
+                        <th>INSTITUTE ID</th>
+                        <th>BRANCH</th>
+                        <th>CURRENT YEAR</th>
+                        <th>LAST EXAM NAME</th>
+                        <th>RESULT</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+                <table id="table4">
+                    <thead>
+                        <th>CURRENT TRAINING</th>
+                        <th>CURRENT INTERNSHIP</th>
+                        <th>CURRENT FELLOWSHIP</th>
+                        <th>CURRENT GRANTS</th>
+                        <th>ANNUAL INCOME(PARENTS)</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <div>
+            <!-- google ads -->
+            Copyright &copy; <b>OFFICIAL MHRD</b>
+        </div>
+    </footer>
+    <!-- ************************************* -->
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+    
+</body>
+
+</html>

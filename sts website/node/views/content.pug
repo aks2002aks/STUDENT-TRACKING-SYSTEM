@@ -1,0 +1,88 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title What We Do - Student Tracking System
+  meta(name='description' contet='.....')
+  link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='favicon_io/favicon.ico')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+  link(rel='stylesheet' href='css/content.css')
+header
+  nav
+    ul
+      .button_box_1
+        a(href='/') HOME
+      .button_box_1
+        a(href='content') CONTENT
+      .button_box_1
+        a(href='contact_us') CONTACT US
+      .button_box_1
+        a(href='about_us') ABOUT US
+      .button_box_1
+        a(href='search') SEARCH
+    .logo
+      .headerText_1
+        img(src='images/logo-home.png' alt='')
+      .headerText_2
+        span  STUDENT TRACKING SYSTEM
+    ul
+      .button_box_2
+        a(href='signup') SIGN UP
+      .button_box_3
+        a(href='login') LOGIN
+    .dropdown
+      img.dropbtn(src='images/avatar.png' alt='Avatar' onclick='myFunction()')
+      #myDropdown.dropdown-content
+        a(href='data_fillup') Data Fillup
+        a(href='logout') Logout
+main
+  section.page1
+    .container_body
+      .plain_text
+        h2 WHAT WE OFFER
+      .card_container
+        .card
+          img(src='images/fellowship.png' alt='Jane')
+          .container
+            h2 Fellowships
+            p.title CEO &amp; Founder
+            p Some text that describes me lorem ipsum ipsum lorem.
+            p jane@example.com
+            p
+              button.button Apply
+        .card
+          img(src='images/grant.png' alt='Mike')
+          .container
+            h2 Grants 
+            p.title Art Director
+            p Some text that describes me lorem ipsum ipsum lorem.
+            p mike@example.com
+            p
+              button.button Apply
+        .card
+          img(src='images/internship.png' alt='John')
+          .container
+            h2 Training
+            p.title Designer
+            p Some text that describes me lorem ipsum ipsum lorem.
+            p john@example.com
+            p
+              button.button Apply
+        .card
+          img(src='images/training.png' alt='John')
+          .container
+            h2 Internships
+            p.title Designer
+            p Some text that describes me lorem ipsum ipsum lorem.
+            p john@example.com
+            p
+              button.button Apply
+footer
+  div
+    // google ads
+    | Copyright &copy; 
+    b OFFICIAL MHRD
+// *************************************
+script(src='script.js')

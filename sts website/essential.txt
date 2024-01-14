@@ -1,0 +1,37 @@
+insert into students (`STDid`,`STDname`,`STDfathername`,`STDmothername`,`STDgender`,`STDdob`,`STDemail`,`STDphonenumber`,`STDstate`,`STDcity`,`STDpincode`,`STDAddress`,`STDinstitutename`,`STDbranch`,`STDcurrentyear`,`STDlastexamname`,`STDresult`,`STDtraining`,`STDintership`,`STDfellowship`,`STDgrants`,`STDannualincome`) values (null,'ashwani kumar singh','shyam narayan singh','madhuri singh','male','2002-12-05','ashkinggaming2662@gmail.com','6307705511','up','vns',221004,'dlw','kiit','btech','3','kiitee',8.2,'','','','','69000')
+
+insert into students (`STDid`,`STDname`,`STDfathername`,`STDmothername`,`STDgender`,`STDdob`,`STDemail`,`STDphonenumber`,`STDstate`,`STDcity`,`STDpincode`,`STDAddress`,`STDinstitutename`,`STDbranch`,`STDcurrentyear`,`STDlastexamname`,`STDresult`,`STDtraining`,`STDintership`,`STDfellowship`,`STDgrants`,`STDannualincome`) values (null,'ashwani kumar singh','shyam narayan singh','madhuri singh','male','2002-12-05','ashkinggaming2662@gmail.com','6307705522','up','vns',221004,'dlw','kiit','btech','3','kiitee',8.2,'','','','','69000')
+
+ ALTER TABLE tmp AUTO_INCREMENT = 2022000000;
+
+var searchdata1 = {
+      'STUDENT_ID': result[0].STDid,
+      'NAME': result[0].STDname,
+      'FATHER NAME': result[0].STDfathername,
+      'MOTHER NAME': result[0].STDmothername,
+      'GENDER': result[0].STDgender,
+      'DOB': result[0].STDdob,
+      'EMAIL': result[0].STDemail,
+      'PHONE_NUMBER': result[0].STDphonenumber
+    }
+    var searchdata2 = {
+      'STATE': result[0].STDstate,
+      'CITY': result[0].STDcity,
+      'PINCODE': result[0].STDpincode,
+      'ADDRESS': result[0].STDAddress
+    }
+    var searchdata3 = {
+      'INSTITUTE_ID': result[0].STDinstitutename,
+      'BRANCH': result[0].STDbranch,
+      'CURRENT_YEAR': result[0].STDcurrentyear,
+      'LAST_EXAM_NAME': result[0].STDlastexamname,
+      'RESULT': result[0].STDresult
+    }
+
+    var searchdata4 = {
+      'CURRENT_TRAINING': result[0].STDtraining,
+      'CURRENT_INTERNSHIP': result[0].STDintership,
+      'CURRENT_FELLOWSHIP': result[0].STDfellowship,
+      'CURRENT_GRANTS': result[0].STDgrants,
+      'ANNUAL_INCOME': result[0].STDannualincome
+    }

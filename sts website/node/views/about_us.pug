@@ -1,0 +1,67 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title About Us - Student Tracking System
+  link(rel='icon', sizes='16x16 32x32 48x48 64x64', href='favicon_io/favicon.ico')
+  link(rel='stylesheet' href='css/about_us.css')
+  link(rel='stylesheet' href='css/header.css')
+  link(rel='stylesheet' href='css/footer.css')
+header
+  nav
+    ul
+      .button_box_1
+        a(href='/') HOME
+      .button_box_1
+        a(href='content') CONTENT
+      .button_box_1
+        a(href='contact_us') CONTACT US
+      .button_box_1
+        a(href='about_us') ABOUT US
+      .button_box_1
+        a(href='search') SEARCH
+    .logo
+      .headerText_1
+        img(src='images/logo-home.png' alt='')
+      .headerText_2
+        span  STUDENT TRACKING SYSTEM
+    ul
+      .button_box_2
+        a(href='signup') SIGN UP
+      .button_box_3
+        a(href='login') LOGIN
+    .dropdown
+      img.dropbtn(src='images/avatar.png' alt='Avatar' onclick='myFunction()')
+      #myDropdown.dropdown-content
+        a(href='data_fillup') Data Fillup
+        a(href='logout') Logout
+main
+  .container_body
+    .inner_container1
+      .About_img
+        img(src='images/img_about_us.jpeg' alt='image_about_us')
+      .About_img_1
+        img(src='images/img_about_us-1.jpeg' alt='image_about_us-1')
+    .para
+      p
+        | Every year more than 6 crores of Indians graduates from diverse backgrounds and with diversity in
+        | education.
+        | Almost similar number of students enter into colleges for taking various education to help them in
+        | seeking jobs.
+        | The task to track students on a one on one basis is also hectic due to the huge number. AICTE and
+        | MHRD aims to
+        | track students and colleges to help them in various processes like ease of student identification,
+        | ease of AICTE
+        | approved college tracking, ease in distribution of fellowships, grants, training. Since there is no
+        | one unique
+        | identification of students the process itself takes time as it requires to have letters from college
+        | heads which
+        | is also time taking process. Hence to track the huge number manually is hectic and a time taking
+        | process.
+footer
+  div
+    // google ads
+    | Copyright &copy; 
+    b OFFICIAL MHRD
+script(src='script.js')

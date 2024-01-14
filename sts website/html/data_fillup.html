@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Educational registration form</title>
+  <link rel="icon" href="images/logo-home.png" type="image/ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/data_fillup.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <div class="button_box_1"><a href="/">HOME</a></div>
+        <div class="button_box_1"><a href="content">CONTENT</a></div>
+        <div class="button_box_1"><a href="contact_us">CONTACT US</a></div>
+        <div class="button_box_1"><a href="about_us">ABOUT US</a></div>
+        <div class="button_box_1"><a href="search">SEARCH</a></div>
+      </ul>
+      <div class="logo">
+        <div class="headerText_1"><img src="images/logo-home.png" alt=""></div>
+        <div class="headerText_2"><span> STUDENT TRACKING SYSTEM</span></div>
+      </div>
+
+      <ul>
+        <div class="button_box_2"><a href="signup">SIGN UP</a></div>
+        <div class="button_box_3"><a href="login">LOGIN</a></div>
+      </ul>
+      <div class="dropdown">
+        <img src="images/avatar.png" alt="Avatar" onclick="myFunction()" class="dropbtn">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="data_fillup">Data Fillup</a>
+          <a href="#">Logout</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main-block">
+      <form action="/submit" method="post">
+        <div class="submission">
+          <h1>DATA SUCESFULLY SUBMITTED</h1>
+        </div>
+        <div class="left-part">
+          <i class="fas fa-graduation-cap"></i>
+          <h1>Student Details</h1>
+        </div>
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i>
+          <h2>Insert Student</h2>
+        </div>
+    
+        <div class="info">
+          <input id="name" type="text" name="name" placeholder="Full name" required>
+          <input id="fathername" type="text" name="fathername" placeholder="Father name" required>
+          <input id="mothername" type="text" name="mothername" placeholder="Mother name" required>
+          <select name="gender" id="gender" required>
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <input placeholder="Date of Birth" id="dob" type="text" onfocus="(this.type='date') " name="dob"  required>
+          <input type="text" name="email" placeholder="Email" id="email" required>
+          <input type="text" name="phone" placeholder="Phone number" id="phone" required>
+
+          <div class="left-part">
+            <h1>Residential Details</h1>
+          </div>
+
+          <input id="address" type="text" name="address" placeholder="Address" required>
+          <input id="state" type="text" name="state" placeholder="State" required>
+          <input id="city" type="text" name="city" placeholder="City" required>
+          <input id="pincode" type="number" name="pincode" placeholder="Pin Code" required>
+
+          <div class="left-part">
+            <h1>Educational Details</h1>
+          </div>
+
+          <input class="institute-name" type="text" name="instituteid" placeholder="Institute Name" required>
+          <input class="branch" type="text" name="branch" placeholder="Branch" required>
+          <input class="current-year" type="text" name="currentyear" placeholder="Current Year" required>
+          <input type="text" name="lastexam" placeholder="Last Exam Name" required>
+          <input type="text" name="examresult" placeholder="Result (Percentage/CGPA)" required>
+
+          <div class="left-part">
+            <h1>Student Financial And Training Details</h1>
+          </div>
+
+          <input type="text" name="currenttrainings" placeholder="Current Training (if any)">
+          <input type="text" name="currentinternship" placeholder="Current Internship (if any)">
+          <input type="text" name="currentfellowship" placeholder="Current Fellowship (if any)">
+          <input type="text" name="currentgrants" placeholder="Current Grants (if any)">
+          <input type="number" name="annualincome" placeholder="Parents' annual income (for grants)">
+        </div>
+        <button  type="submit">Submit</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div>
+      <!-- google ads -->
+      Copyright &copy; <b>OFFICIAL MHRD</b>
+    </div>
+  </footer>
+  <!-- ************************************* -->
+  <script src="script.js"></script>
+
+</html>

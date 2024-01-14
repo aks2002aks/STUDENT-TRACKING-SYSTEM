@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300&family=Grechen+Fuemen&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(to right, #FCCF31, #F55555);
+    
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    height: 70px;
+    display: flex;
+    padding: 0px 25px;
+    align-items: center;
+}
+
+nav ul a {
+    color: rgb(8, 182, 23);
+    text-decoration: none;
+    padding: 8px 0px;
+    font-weight: bolder;
+}
+
+.button_box_1 {
+    display: flex;
+    height: 35px;
+    padding: 0px 12px;
+    margin: 0px 5px;
+    text-align: center;
+    justify-content: center;
+}
+
+.button_box_2 {
+    display: inline-block;
+    position: absolute;
+    left: 79%;
+}
+
+.button_box_3 {
+    display: inline-block;
+    position: absolute;
+    left: 86%;
+}
+
+nav ul a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    left: 40%;
+    margin: 5px 0px;
+}
+
+.logo img {
+    width: 50%;
+    padding: 0px 30px;
+}
+
+
+/* text right to logo */
+
+.logo b {
+    color: cyan;
+    font-family: 'Grechen Fuemen', cursive;
+}
+
+
+/* dropdown fixed */
+
+.dropdown {
+    position: absolute;
+    left: 92%
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    margin: 8px 0px;
+    display: inline-flex;
+    border: 2px solid rgb(8, 206, 90);
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    border: 2px solid #2980B9;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f7f7;
+    min-width: 115px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #ddd
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+
+/* animation for text  */
+
+.headerText_1,
+.headerText_2 {
+    display: inline-block;
+    width: 100px;
+    padding: 0px 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.headerText_1 {
+    animation: showup 7s infinite;
+}
+
+.headerText_2 {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.headerText_2 span {
+    animation: slidein 7s infinite;
+    font-weight: bolder;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 355px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
+}
+
+
